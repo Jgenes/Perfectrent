@@ -1,39 +1,263 @@
-.App {
-  text-align: center;
+*{
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.navMain{
+  width: 160px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  margin-right: 46.9px;
+}
+.navMain li{
+  list-style: none; 
+}
+.navMain li a{
+  text-decoration: none;
+  font-size: 11px;
+  color: gray;
+  font-weight: 600;
+}
+.span1{
+  color: #009CFF;
+}
+.navMains{
+  width: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  position: absolute;
+  margin-left: 855px;
+  margin-top: 75px;
+}
+.navMains li{
+  list-style: none; 
+}
+.navMains li a{
+  text-decoration: none;
+  font-size: 12px;
+  color: gray;
+  font-weight: 600;
+}
+.navMains a:hover{
+  color: #009CFF;
+}
+.DownBar{
+  position: absolute;
+  background-color: #f6f6f6;
+  margin-top: 150px;
+  width: 100%;
+  height: 140px;
+  
+  border-radius: 4px;
+}
+.DownBar ul li{
+  list-style: none;
+
+ 
+}
+.DownBar-Items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.label{
+  position: absolute;
+  margin-left: -170px;
+  color: gray;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 18px;
+}
+
+.label1{
+  position: absolute;
+  margin-left:-140px;
+  color: gray;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.label2{
+  position: absolute;
+  margin-left:-190px;
+  color: gray;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.filter{
+  display: block;
+  position: absolute;
+  background-color: white;
+  color: #009CFF;
+  border-color: white;
+  padding: 5px;
+  border-radius: 2px;
+  margin-top: 140px;
+  z-index: 12;
+  margin-left: 90px;
+}
+.Input1{
+  position: relative;
+
+  outline: 0;
+  border-top: 0px;
+  border-right: 0;
+  border-left: 0px;
+  width: 290px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid gray;
+  margin-top: 60px;
+  color: gray;
+}
+.Input2{
+  position: relatives;
+  margin-left: -140px;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0;
+  border-left: 0px;
+  width: 290px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid gray;
+  margin-top: 70px;
+  color: gray;
+}
+.Input4{
+  position: absolute;
+  margin-left: -190px;
+  outline: 0;
+  border-top: 0px;
+  border-right: 0;
+  border-left: 0px;
+  width: 290px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid gray;
+  margin-top: 60px;
+  color: gray;
+}
+.Input1:hover{
+  border-color: #c4c4c4;
+}
+.Input2:hover{
+  border-color: #c4c4c4;
+}
+.Input4:hover{
+  border-color: #c4c4c4;
+}
+optgroup{
+  background-color: white;
+}
+option{
+  background-color: white;
+}
+select{
+  position: absolute;
+  margin-left: -110px;
+}
+#input{
+  position: absolute;
+  margin-left: 250px;
+}
+.round{
+  position: absolute;
+  margin-left: 1220px;
+  margin-top: 125px;
+  display:block;
+  height: 50px;
+  width: 50px;
+  background-color: #009CFF;
+  border-radius: 50%;
+  border: 1px solid #009CFF;
+  color: white;
+}
+.BiHome{
+  font-size: 20px;
+}
+.labelA{
+  position: relative;
+  color: gray;
+  font-size: 12px;
+  font-weight: bolder;
+
+}
+.labelB{
+  position: relative;
+  color: gray;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.formContainer{
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 39%;
+}
+.formItems{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.email{
+  position: relative;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.password{
+  position: relative;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.loginButton{
+  position: absolute;
+  display:block;
+  height: 44px;
+  width: 50px;
+  background-color: #009CFF;
+  border: 1px solid #009CFF;
+  color: white;
+  width: 289px;
+  margin-top: 16px;
+  border-radius: 1px;
+}
+.email :hover{
+  border-color: #009CFF;
+}
+.formTitle{
+  position:absolute;
+  margin-left: 42%;
+  margin-top: 12%;
+  color: #c4c4c4;
+  font-weight: 700;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #c4c4c4;
+  font-size: 13px;
+}
+@keyframes spinner{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner{
+  width: 50%;
+  height: 50%;
+  border: 10px solid #009CFF;
+  border-top: 10px solid #009CFF;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+.spinner-container {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  align-items: center;
+  height: 350px;
 }
